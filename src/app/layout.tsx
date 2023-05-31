@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Navigation } from "./Navigation";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -21,6 +22,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Analytics />
       </body>
     </html>
   );
