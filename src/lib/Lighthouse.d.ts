@@ -35,6 +35,14 @@ export interface LighthouseResult {
     initial_url: string;
   };
   lighthouseResult: {
+    fullPageScreenshot: {
+      nodes: any[];
+      screenshot: {
+        data: string;
+        height: number;
+        width: number;
+      };
+    };
     requestedUrl: string;
     finalUrl: string;
     lighthouseVersion: string;
